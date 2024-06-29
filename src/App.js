@@ -7,7 +7,7 @@ import { BrowserRouter, Route, Link, Routes } from 'react-router-dom'
 function App() {
   // const [stu, setstu] = useState([{ n: "keerthi", fav: false }, { n: "suma", fav: false }])
 
-  const arr = [{ n: "keerthi", fav: false }, { n: "suma", fav: false }]
+  const [arr,setarr] = useState([{ n: "keerthi", fav: false }, { n: "suma", fav: false }])
   return (
 
     <div className="bg-yellow-200 p-5 ">
@@ -16,8 +16,8 @@ function App() {
   
         <Routes>
           <Route path='/' element={<Log/>}></Route>
-          <Route path='/Stulist' element={<Stulist stu={arr} />}></Route>
-          <Route path='/Favlist' element={<Favlist stu={arr} />}></Route>
+          <Route path='/Stulist' element={<Stulist stu={arr} setstu={setarr} />}></Route>
+          <Route path='/Favlist' element={<Favlist stu={arr} setstu={setarr} />}></Route>
 
         </Routes>
       </BrowserRouter>

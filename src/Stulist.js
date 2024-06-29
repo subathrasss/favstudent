@@ -1,9 +1,11 @@
 import Nav from "./Nav.jsx"
+import { useState } from "react"
 function Stulist(props) {
     const stu = props.stu
+    const setstu=props.setstu
     function favourite(i)
-    {
-        stu[i].fav=true
+    {stu[i].fav=true
+        // setstu([...stu,{stu[i].fav:true}])
         console.log(stu[i].fav)
     }
     
