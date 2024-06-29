@@ -16,7 +16,7 @@ function Favlist(props) {
             <h1>Fav student list</h1>
             {
                 arr.map(function (item, index) {
-                    if (item.fav == true) { return (<p>{item.n} <button onClick={() => remove(index)}>Remove</button></p>) }
+                    if (item.fav == true) { return (<p>{item.n} <button className="p-1 border border-black rounded-md hover:bg-white bg-yellow-200" onClick={() => remove(index)}>Remove</button></p>) }
 
                 })
             }

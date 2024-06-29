@@ -15,7 +15,7 @@ function Stulist(props) {
 {
     stu.map(function(item,index){
         return(
-        <p>{item.n}<button onClick={()=>favourite(index)} className="p-5">Add to fav</button></p>)
+        <p>{item.n}<button onClick={()=>favourite(index)} className="p-1 border border-black rounded-md hover:bg-white bg-yellow-200">Add to fav</button></p>)
     })
 }
 
